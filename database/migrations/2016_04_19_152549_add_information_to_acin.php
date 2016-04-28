@@ -14,10 +14,10 @@ class AddInformationToAcin extends Migration
     {
         Schema::table('acin', function (Blueprint $table) {
             //$table->increments('id');
-            $table->string('about', 300)->nullable();
-            $table->string('website', 300)->nullable();
-            $table->string('address', 300)->nullable();
-            $table->string('contact', 300)->nullable();
+            $table->string('about', 300);
+            $table->string('website', 300);
+            $table->string('address', 300);
+            $table->string('contact', 300);
             //$table->timestamps();
         });
     }

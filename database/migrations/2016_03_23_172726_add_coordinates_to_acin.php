@@ -13,10 +13,9 @@ class AddCoordinatesToAcin extends Migration
     public function up()
     {
         Schema::table('acin', function (Blueprint $table) {
-            $table->increments('id');
             $table->decimal('latitude', 10, 8);
             $table->decimal('longitude', 11, 8);
-            $table->timestamps();
+            
         });
     }
 

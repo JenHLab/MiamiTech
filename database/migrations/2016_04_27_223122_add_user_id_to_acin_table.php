@@ -13,7 +13,7 @@ class AddUserIdToAcinTable extends Migration
     public function up()
     {
         Schema::table('acin', function (Blueprint $table) {
-            $table->integer('user_id')->unsigned()->index()->nullable();
+            $table->integer('user_id')->unsigned()->index();
         });
     }
 

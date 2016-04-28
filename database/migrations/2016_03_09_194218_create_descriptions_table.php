@@ -13,7 +13,7 @@ class CreateDescriptionsTable extends Migration
     public function up()
     {
         Schema::create('descriptions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->integer('acin_id')->unsigned()->index();
             $table->text('body');
             //$table->text('website');
