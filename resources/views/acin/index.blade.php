@@ -57,19 +57,19 @@
 	@foreach ($acin as $acin)
 		<div>
 			
-			<ul>
-			<b>{{ $acin->name }}</b>
-			{{ $acin->about}}
-			<br>
-			<em>Contact Information:</em> {{ $acin->contact}} 
-			</ul>
 			
-			<!-- <ul>
-				@foreach ($acin->descriptions as $description)
-					<li>{{ $description->body }}</li>
-					<hr>
-				@endforeach
-			</ul> -->
+			<h1><a href="{{ URL::to('acin/*/edit', $acin->id) }}">{{ $acin->name }}</a></h1>
+			<ul>
+		<li>{{$acin->user_id}}</li>	
+		<li>{{$acin->about}}</li>
+		<li>{{$acin->website}}</li>
+		<li>{{$acin->address}}</li>
+		<li>{{$acin->contact}}</li>
+	</ul>
+	<!-- <div class="form-group">
+			<button hrfe class="btn btn-primary">Update Company</button>
+		</div> -->
+			<a href="/acin/{acin}/edit'" class="btn btn-primary">Edit Company</a>
 
 		</div>
 

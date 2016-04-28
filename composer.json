@@ -13,7 +13,8 @@
         "cornford/googlmapper": "2.*",
         "egeloen/http-adapter": "~0.8|~1.0",
         "igorw/get-in": "~1.0",
-        "toin0u/geocoder-laravel": "^0.6.0"
+        "toin0u/geocoder-laravel": "^0.6.0",
+        "doctrine/dbal": "^2.5"
 
 
     },

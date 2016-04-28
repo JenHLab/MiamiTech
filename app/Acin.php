@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Acin extends Model
 {
-	//protected $fillable = ['body'];
+	protected $fillable = ['name', 'about', 'address', 'website', 'contact'];
 
-    public function descriptions() {
+    /*public function descriptions() {
 
     	return $this->hasMany(Description::class);
-    }
+    }*/
 
 
     protected $table = 'acin';

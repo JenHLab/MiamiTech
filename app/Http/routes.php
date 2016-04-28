@@ -12,11 +12,10 @@ Route::get('about', 'PagesController@about');
 Route::get('acin', 'AcinController@index'); //Accelerator and Incubator controller
 
 Route::get('acin/create', 'AcinController@create');
-
 Route::post('acin', 'AcinController@store');
-	
 
-Route::get('acin/update', 'AcinController@update');
+Route::get('acin/{acin}/edit', 'AcinController@edit');
+Route::patch('acin/{acin}', 'AcinController@update');
 
 Route::get('acin/{acin}', 'AcinController@show');
 

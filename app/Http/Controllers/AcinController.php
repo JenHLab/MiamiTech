@@ -36,10 +36,9 @@ class AcinController extends Controller
 
     }
 
-    public function index(){
+    public function index(Acin $acin){
 
     	$acin = Acin::all();
-    	
 
     	return view('acin.index', compact('acin'));
 
@@ -47,7 +46,7 @@ class AcinController extends Controller
 
     public function show(Acin $acin){
         
-    	
+    	   $acin = Acin::all();
 
     	return view('acin.show', compact('acin'));
 
@@ -100,9 +99,22 @@ class AcinController extends Controller
 
     }
 
-    public function update(Acin $acin){
+    public function edit(Acin $acin){
+        return view('acin.edit', compact('acin'));
 
-        //
+    }
+
+    public function update(Request $request, Acin $acin){
+
+        $acin->update($request->all());
+        $acin->name = $request->name;
+        $acin->about = $request->about;
+        $acin->address = $request->address;
+        $acin->website = $request->website;
+        $acin->contact = $request->contact;
+
+
+        return back();
 
     }
 
