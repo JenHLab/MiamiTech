@@ -1,7 +1,10 @@
 @extends('layout')
 
-@section('content')
+@section('link')
 
+@section('content')
+	
+	<br><br>
 	<h1>Add your company, institution or organization!</h1>
 
 	<hr/>
