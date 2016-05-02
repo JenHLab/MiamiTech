@@ -4,11 +4,11 @@
 
 @section('content')
 	
-	<br><br>
-	<h1>Add your company, institution or organization!</h1>
+	<br><br><br><br>
+	<h1 style="padding-left: 10px;">Add your company, institution or organization!</h1>
 
 	<hr/>
-	
+		<div style="padding-left: 20px;">
 		{{ Form::open(array('action' => 'AcinController@store')) }}
 			<div class="form-group">
 				{{ Form::label('name', 'Name:') }}
@@ -54,6 +54,7 @@
 				<button type="submit" class="btn btn-primary">Add and Show Map!</button>
 			</div>
 		{{ Form::close() }}
+		</div>
 		<!-- <form method="POST">
 			<div class="form-group">
 				<p>Name</p>

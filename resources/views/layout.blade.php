@@ -183,11 +183,11 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 @media(min-width:768px) {
@@ -197,22 +197,22 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 18px;
     }
 }
 
 .btn-circle {
     width: 70px;
-    height: 70px;
+    height: 40px;
     margin-top: 15px;
-    padding: 7px 16px;
+    padding: 5px 10px;
     border: 2px solid #fff;
     border-radius: 100%!important;
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;

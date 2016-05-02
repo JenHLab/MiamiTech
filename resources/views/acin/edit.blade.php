@@ -3,7 +3,7 @@
 @section('content')
 
 	
-
+	<div style="padding-left: 10px;">
 	<h1>Edit Company</h1>
 
 	<form method="POST" action="/acin/{{ $acin->id }}">
@@ -29,6 +29,9 @@
 		</div>
 	</form>
 
+		<a href="/acin" class="btn btn-info" role="button">Back to Map</a>
+
+		</div>
 	<!-- {{ Form::open(array('url' => 'http://homestead.app/acin/1/edit')) }}
 			<div class="form-group">
 				{{ Form::label('name', 'Name:') }}
