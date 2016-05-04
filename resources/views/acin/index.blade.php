@@ -124,7 +124,7 @@
 
 		};
 
-		$.getJSON("http://homestead.app/json", function(data) {
+		$.getJSON("/json", function(data) {
 
 
 		addDataToMap(data, mymap); 	
