@@ -100,6 +100,10 @@ class AcinController extends Controller
     }
 
     public function edit(Acin $acin){
+
+        $acin = Acin::findOrFail($id);
+
+
         return view('acin.edit', compact('acin'));
 
     }

@@ -39,6 +39,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>MiamiTech Map</h2>
                 <p>Browse the map below to see where the company, higher education institution or organization is located. Click on marker for more information.</p>
+                <br><br>
                 <div id="mapid" style="width: 990px; height: 400px; margin: -100px;"></div>
                 <br><br><br><br><br><br>
                 <h1>On the Map:</h1>
@@ -56,7 +57,8 @@
 	<!-- <div class="form-group">
 			<button hrfe class="btn btn-primary">Update Company</button>
 		</div> -->
-			<a href="/acin/{acin}/edit" class="btn btn-primary">Edit Company</a>
+			<a href="route('AcinController@edit', $acin->id);" class="btn btn-primary">Edit Company</a>
+            <br><br>
 
 		</div>
 

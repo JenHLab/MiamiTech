@@ -10,19 +10,29 @@
 	{{ method_field('PATCH') }}
 
 		<div class="form-group">
+			<p>Name
 			<textarea name="name" class="form-control">{{ $acin->name }}</textarea>
+			</p>
 		</div>
 		<div class="form-group">
+			<p>About
 			<textarea name="about" class="form-control">{{ $acin->about }}</textarea>
+			</p>
 		</div>
 		<div class="form-group">
+			<p>Address
 			<textarea name="address" class="form-control">{{ $acin->address }}</textarea>
+			</p>
 		</div>
 		<div class="form-group">
+			<p>Website
 			<textarea name="website" class="form-control">{{ $acin->website }}</textarea>
+			</p>
 		</div>
 		<div class="form-group">
+			<p>Contact
 			<textarea name="contact" class="form-control">{{ $acin->contact }}</textarea>
+			</p>
 		</div>
 		<div class="form-group">
 			<button type="submit" class="btn btn-primary">Update Company</button>
